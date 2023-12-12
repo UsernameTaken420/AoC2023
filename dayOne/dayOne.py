@@ -34,4 +34,4 @@ for line in data:
             lastNum = char
     numberGen = str(firstNum) + str(lastNum)
     partTwoSum+=int(numberGen)
-print(f"The final sum port part two is: {partTwoSum}")
+print(f"The final sum for part two is: {partTwoSum}")
