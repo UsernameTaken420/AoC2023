@@ -1,7 +1,8 @@
 import re
+from pathlib import Path
 
 # Part One
-data = open("dayOneInput.txt", "r")
+data = open(Path(__file__).with_name("dayOneInput.txt"), "r")
 partOneSum = 0
 for line in data:
     firstNum = 0
@@ -16,7 +17,7 @@ for line in data:
 print(f"The final sum for part one is: {partOneSum}")
 
 # Part Two
-data = open("dayOneInput.txt", "r")
+data = open(Path(__file__).with_name("dayOneInput.txt"), "r")
 textNumbers = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9}
 partTwoSum = 0
 for line in data:

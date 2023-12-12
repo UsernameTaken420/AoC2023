@@ -1,7 +1,7 @@
-import string
+from pathlib import Path
 
 # Part One
-data = open("dayTwoInput.txt", "r")
+data = open(Path(__file__).with_name("dayTwoInput.txt"), "r")
 maxRed = 12
 maxGreen = 13
 maxBlue = 14 
@@ -30,7 +30,7 @@ for line in data:
 print(f"Part one sum of IDs is: {idSum}")
 
 # Part Two
-data = open("dayTwoInput.txt", "r")
+data = open(Path(__file__).with_name("dayTwoInput.txt"), "r")
 totalSum = 0
 for line in data:
     minRed = -1
